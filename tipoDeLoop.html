@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições aula 3.1 nostrando loop 2</title>
+</head>
+
+<body>
+    <h1>Problema</h1>
+    <p>
+        nostrando loop <br>
+        Pedir para o usuário digitar um número e mostrar a tabuada desse número de 1 a 1001
+        <br> <br> <br>
+    </p>
+    <script>
+        var numero = prompt('digite un numero');
+        numero = parseFloat(numero);
+
+        //repita ate que indice seja <= 1000
+         
+
+        //Loop FOR
+
+        //var indice = 1001;
+
+    //    while(indice <= 1000) {
+    //         document.write(numero + ' x  ' + indice + ' = ' + (numero * indice) + '<br/>'); //no usar document.write para crear web e essa coisa
+
+    //         indice = indice + 1;
+    //         indice = indice += 1;
+    //         indice++;
+
+
+    //     }
+
+        for(var i = 1; i <= 1000; i++){
+            document.write(numero + ' x  ' + i + ' = '+ (numero * i)+ ' <br/>')
+        }
+
+
+        document.write(`saiu do loop`);
+
+    //     var indice = 1001; // Loop DO
+
+    //    do {
+    //         document.write(numero + ' x  ' + indice + ' = ' + (numero * indice) + '<br/>'); //no usar document.write para crear web e essa coisa
+
+    //         indice = indice + 1;
+
+    //     }while(indice <= 1000)
+    //     document.write(`saiu do loop`);
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
