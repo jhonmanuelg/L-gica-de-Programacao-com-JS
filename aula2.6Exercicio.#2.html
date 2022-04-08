@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de programacion</title>
+</head>
+
+<body>
+    <h1>Operadores lógicos Aula2.6 exercicio #2</h1>
+    <!--.
+        ! não(not) 1`
+        <br>        
+        && e(and)  2`
+        <br>
+        || ou(or)  3`
+    --->
+    <script>
+        var nJugador1 = prompt(nJugador1)
+        nJugador1 = parseInt(nJugador1)
+
+        var nJugador2 = prompt(nJugador2)
+        nJugador2 = parseInt(nJugador2)
+            
+        var nSorteado = parseInt(Math.random() * 2);
+        alert(`nSorteado: ` + nSorteado);
+        // se o numero sorteado for 0, ganha quem escolhar o numero MENOR
+        // if ((nSorteado === 0 && nJugador1 < nJugador2) || ( nSorteado === 1 && nJugador1 > nJugador2));
+        
+
+        
+        // if(nSorteado === 0){
+        //     if(nJugador1 < nJugador2){
+        //         alert('gano el jugador 1')
+        //     }else{
+        //         alert('gano el jugador 2')
+        //     }
+
+        //     //si el numero for 1, ganha quem escolher o numero MAIOR
+         if ((nSorteado === 0 && nJugador1 < nJugador2) || ( nSorteado === 1 && nJugador1 > nJugador2)){
+            alert('gano el jugador 1')
+            }else{
+            alert('gano el jugador 2')
+            }  
+        // }else {
+        //     if(nJugador1 > nJugador2){
+        //         alert('gano el jugador 1')
+        //     }else{
+        //         alert('gano el jugador 2')
+        //     }
+          
+        // }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
