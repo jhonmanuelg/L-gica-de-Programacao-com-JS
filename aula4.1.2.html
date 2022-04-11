@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lógica de programação com Javascript Funçes</title>
+    <title>Lógica de programação com Javascript Funçes 4.1.2</title>
 </head>
 
 
 
 <body>
 
-    <h1 >Problema</h1>
+    <h1>Problema</h1>
 
-    <p >
+    <p>
         Pedir para o usuário degitar um número e mostrar a tabuada desse
         número de 1 a 1000. deve ter a possibilidade do usúario digitar
         outro número e também de limpar a tabuada gerado previamente.
@@ -29,14 +29,40 @@
 
     <script>
         function mostrarTabuada() {
-            alert('mostrar tabuada')
+            // preguntar o numero para usuario
+            var n = prompt('Digite um numero');
+            limparTabuada();
+
+            //converter 0 numero
+            n = parseFloat(n);
+
+            //crear uma variavel que servira de indice
+            var i = 1;
+
+
+            //encuento indice <- 1000
+
+            //concatenar na variavel mensagem
+            while (i <= 500) {
+                mensagem += n + ' x ' + i + ' = ' + (n * i) + '<br>';
+                i++;
+            }
+
+            output.innerHTML = mensagem;
+
+            //mostrar mensagem no output
+
+
         }
-        mostrarTabuada();
+
+        function limparTabuada() {
+            mensagem = ' ';
+            output.innerHTML = mensagem;
+        }
 
         var output = document.querySelector('#output');
 
         var mensagem = '';
-
         output.innerHTML = mensagem;
 
 
