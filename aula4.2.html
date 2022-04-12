@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação com Javascript aula 4.2</title>
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <p>
+        Pedir para usuario digitar doi numers que representam os lado de um retângulo
+        assim que a pagina é carregada. Mostrar na tela a área total quando clicar num botão.
+    </p>
+    <br>
+    <hr>
+    <br>
+    <button onclick="mostrarArea(largura, altura)">mostrar area</button>
+    <br>
+    <script>
+        var largura = prompt('digite a largura');
+        largura = parseFloat(largura);
+
+        var altura = prompt('digite a altura');
+        altura = parseFloat(altura);
+
+        function mostrarArea(l, a) {
+            alert('area total: ' + (l + a));
+           
+        }
+
+    </script>
+
+
+</body>
+
+</html>
