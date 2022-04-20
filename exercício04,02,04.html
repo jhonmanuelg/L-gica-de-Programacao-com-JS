@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação com Javascript Funçes 4.2.4</title>
+</head>
+
+
+
+<body>
+
+    <h1> Lógica de programação com Javascript tabuada simples com switch</h1>
+
+
+    <hr>
+
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+    <div id="output"></div>
+
+    <script>
+        var n1 = prompt('digite un numero');
+        n1 = parseFloat(n1);
+
+        escreve();
+
+        function escreve() {
+            var output = document.querySelector(`#output`);
+            output.innerHTML = n1;
+        }
+
+        function calcular(simbolo) {
+            var n2 = prompt('digite outro numero para somar');
+            n2 = parseFloat(n2);
+            //n1 = n1 + n2; igual que da enbaixo
+            // n1 += n2;
+            switch(simbolo){
+                case '+': 
+                n1 += n2;
+                break;
+                case '-': 
+                n1 -= n2;
+                break;
+                case '*': 
+                n1 *= n2;
+                break;
+                case '/': 
+                n1 /= n2;              
+            }
+
+            escreve()
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
